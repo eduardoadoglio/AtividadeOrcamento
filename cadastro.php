@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<meta charset="utf-8">
 </head>
+<!-- vai toma no cu -->
 <?php
 	include("conexao.php");
 ?>
