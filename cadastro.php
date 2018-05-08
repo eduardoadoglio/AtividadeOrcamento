@@ -4,11 +4,13 @@
 	<title>Cadastro de Funcionário</title>
 	<meta charset="utf-8">
 			<!-- Importando o BootStrap -->
-			<link rel="stylesheet" href="js/bootstrap.min.css">
+			<link rel="stylesheet" href="css/bootstrap.min.css">
 			<!-- Relacionando com o CSS de Estilo -->
 			<link rel="stylesheet" href="style.css">
 			<!-- Importando o JQuery -->
 		 	<script src="js/jquery.min.js"></script>
+		 	<!-- Importando o JqueryMask -->
+		 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.min.js"></script>
 	      	<!-- Importando o Java Script do BootStrap -->
 		  	<script src="js/bootstrap.min.js"></script>	
 		  	<!-- Ícone da Aba do Navegador -->
@@ -31,12 +33,12 @@
 					<b>CADASTRE-SE O FUNCIONÁRIO!</b>
 					<p>Insira as informações necessárias do Funcionário:</p>
 					<hr>
-					<input type="text" name="nome_first" placeholder="Insira o Nome do Funcionário"><br>
-					<input type="text" name="nome_last" placeholder="Insira o Sobrenome do Funcionário"><br>
-					<input type="password" name="senha" placeholder="Digite a Senha"><br>
-					<input type="password" name="confirm_senha" placeholder="Confirme a Senha"><br>
-					<input type="email" name="email" placeholder="Digite o Email do Funcionário"><br>
-					<input type="number" name="telefone" placeholder="Insira o telefone do Funcionário"><br>
+					<input type="text" maxlength="30" required name="nome_first" placeholder="Nome do Funcionário"><br>
+					<input type="text" maxlength="30" required name="nome_last" placeholder="Sobrenome do Funcionário"><br>
+					<input type="password" maxlength="30" required name="senha" placeholder="Digite a Senha"><br>
+					<input type="password" maxlength="30" required name="confirm_senha" placeholder="Confirme a Senha"><br>
+					<input type="email" maxlength="50" required name="email" placeholder="example@email.com"><br>
+					<input type="text" maxlength="15" required name="telefone" placeholder="(XX) XXXXX-XXXX"><br>
 
 					<input type="submit" value="CADASTRAR">
 					<input type="reset" value="LIMPAR">

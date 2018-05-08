@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home</title>
+	<title>Login</title>
 	<!-- Importando o BootStrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Relacionando com o CSS de Estilo -->
@@ -26,6 +26,13 @@
 	<meta charset="utf-8">
 </head>
 <body>
-<h1> bem vindo patrão </h1>
+<form method="post" action="index.php">
+<center>
+	<input type="text" maxlength="30" placeholder="Nome de Usuário" name="nomeusuario"><br>
+	<input type="text" maxlength="30" placeholder="Senha"><br>
+	<input type="submit" class="btn" value="Enviar">
+
+</center>
+</form>
 </body>
 </html>
